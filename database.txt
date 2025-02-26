@@ -1,0 +1,7 @@
+tbl_task :
+
+1. id | bigInt | AI | PRIMARY
+2. nama_task | Text
+3. prioritas | varchar(35)
+4. status | varchar(35)
+5. tanggal | date
