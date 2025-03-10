@@ -46,10 +46,11 @@ include "koneksi.php";
             <td><?=$data['tanggal']?></td>
             <td><a href="action.php?hapus=<?=$data['id'];?>">hapus</a> |
                 <?php if ($data['status'] == "Belum Selesai") { ?>
-                    <a href="action.php?selesai=<?=$data['id'];?>">Selesaikan</a>
+                    <a href="action.php?selesai=<?=$data['id'];?>">Selesaikan</a> |
                 <?php
                     }
                 ?>
+                <a href="edit.php?id=<?= $data['id'] ?>">edit</a>
             </td>
         </tr>
         <?php
