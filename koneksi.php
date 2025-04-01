@@ -1,3 +1,3 @@
 <?php
-    $koneksi = mysqli_connect("localhost", "root", "", "ukk_nama_xiirpl");
+    $koneksi = mysqli_connect("localhost", "root", "", "db_todolist");
 ?>

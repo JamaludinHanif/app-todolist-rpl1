@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif; background-color: #f8f9fa; padding: 20px;
+}
+
+/*  */
+.card-header {
+    max-width: 500px; margin: auto; margin-bottom: 30px; background: #fff; border-radius: 8px; box-shadow: 0px 0px 10px rgba(0,0,0,0.1); padding: 20px;
+}
+
+/* header */
+.title {
+    font-size: 20px; font-weight: bold; text-align: center; margin-bottom: 10px; color: #333;
+}
+.biodata {
+    font-size: 15px; text-align: center; margin-bottom: 20px;
+}
+
+/* form */
+form {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+.form-group {
+    display: flex; flex-direction: column; gap: 10px;
+}
+.form-input {
+    padding: 8px; border: 1px solid #ccc; border-radius: 4px;
+}
+form button {
+    background: oklch(0.685 0.169 237.323); color: white; padding: 8px; border: none; border-radius: 4px; cursor: pointer;
+}
+
+/*  */
+.card-todo {
+    max-width: 900px; margin: auto; background: #fff; border-radius: 8px; box-shadow: 0px 0px 10px rgba(0,0,0,0.1); padding: 10px; max-height: 400px; overflow-y: auto;
+}
+
+/* Scrollbar custom */
+.card-todo::-webkit-scrollbar {
+    width: 6px;
+}
+
+.card-todo::-webkit-scrollbar-thumb {
+    background: #aaa;
+    border-radius: 10px;
+}
+
+.card-todo::-webkit-scrollbar-track {
+    background: #f0f0f0;
+}
+
+
+/* todo anchor */
+.todo-item {
+    text-align: left;
+    padding: 0.5rem;
+    border-bottom: 1px solid rgba(255, 193, 7, 0.5);
+}
+.todo-item:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+.todo-header {
+    font-size: 15px;
+}
+.todo-footer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+}
+
+/* action section */
+.todo-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.todo-actions button,
+.todo-actions a {
+    background: none;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* status section */
+.status.Selesai {
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    background-color: #28a745;;
+    color: white;
+}
+.status.Belum {
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    background-color: red;;
+    color: white;
+}
+
+
+/* prioritas section */
+.priority.tinggi {
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    background-color: oklch(0.491 0.27 292.581);
+    color: white;
+}
+.priority.sedang {
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    background-color: oklch(0.518 0.253 323.949);
+    color: white;
+}
+.priority.rendah {
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    background-color: oklch(0.525 0.223 3.958);
+    color: white;
+}
+
+.divider {
+    height: 20px;
+    width: 2px;
+    background-color: gray;
+}
